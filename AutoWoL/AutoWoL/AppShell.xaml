@@ -4,9 +4,17 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:AutoWoL"
-    Shell.FlyoutBehavior="Disabled"
-    Title="AutoWoL">
+    Shell.FlyoutBehavior="Disabled">
 
+    <TabBar>
+        <ShellContent
+            Title="AutoWoL"
+            ContentTemplate="{DataTemplate local:MainPage}" />
+        <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate local:AboutPage}" />
+    </TabBar>
+    
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
