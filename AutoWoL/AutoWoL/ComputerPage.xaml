@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutoWoL.ComputerPage"
+             Title="ComputerPage">
+    <VerticalStackLayout Spacing="10" Margin="5">
+        <Editor x:Name="HostnameEditor"
+                Placeholder="Enter your hostname"
+                HeightRequest="50" />
+
+        <Editor x:Name="MacEditor"
+                Placeholder="Enter the MAC address of the Wake on Lan device"
+                HeightRequest="50" />
+
+        <Grid ColumnDefinitions="*,*" ColumnSpacing="4">
+            <Button Text="Save"
+                    Clicked="SaveClicked"
+                    Grid.Column="0" />
+
+            <Button Text="Delete"
+                    Clicked="DeleteClicked" 
+                    Grid.Column="1" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

@@ -9,7 +9,7 @@
     <TabBar>
         <ShellContent
             Title="AutoWoL"
-            ContentTemplate="{DataTemplate local:MainPage}" />
+            ContentTemplate="{DataTemplate local:ComputerPage}" />
         <ShellContent
             Title="About"
             ContentTemplate="{DataTemplate local:AboutPage}" />
